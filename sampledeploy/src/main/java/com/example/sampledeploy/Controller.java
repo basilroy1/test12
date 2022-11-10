@@ -1,2 +1,12 @@
-package com.example.sampledeploy;public class Controller {
+package com.example.sampledeploy;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Controller {
+  @GetMapping("https://sample-deploy.azurewebsites.net/")
+  public String re(){
+    return "rerere";
+  }
 }
