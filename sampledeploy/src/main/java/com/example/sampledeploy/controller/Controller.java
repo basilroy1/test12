@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
-  @GetMapping("/sample-deploy.azurewebsites.net/")
+  @GetMapping("/")
   public String re(){
     return "rerere";
   }
