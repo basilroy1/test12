@@ -1,9 +1,7 @@
 package com.example.sampledeploy.service;
 
 import com.example.sampledeploy.constants.BloodPressureConstants;
-import org.springframework.stereotype.Service;
 
-//@Service
 public class BusinessLogic {
   private BusinessLogic(){}
   public static boolean checkSystolicisAlwaysHigherThanDiastolic(int x, int y) {
