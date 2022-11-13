@@ -28,7 +28,7 @@ jobs:
         run: mvn package -Pproduction --file ./sampledeploy/
              
       - name: deploy using Maven
-        run: mvn azure-webapp:deploy
+        run: mvn azure-webapp:deploy --file ./sampledeploy/
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
