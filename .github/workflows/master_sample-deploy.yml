@@ -36,13 +36,13 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-          run: mvn azure-webapp:config
+          #run: mvn azure-webapp:config
              
       - name: deploy using Maven
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-          run: mvn azure-webapp:deploy --file ./sampledeploy/
+        #uses: azure/login@v1
+        #with:
+         # creds: ${{ secrets.AZURE_CREDENTIALS }}
+        run: mvn azure-webapp:deploy --file ./sampledeploy/
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
